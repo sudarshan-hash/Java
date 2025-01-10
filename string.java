@@ -27,3 +27,28 @@ class string{
         //System.out.format("My Self %3$s.\n I am %1$d year old and learn in %2$d year Engg at PREC Loni",age,y,str);
     }
 }
+
+                                     // ------- Code for  Palindrome or not -----------
+
+ import java.util.*;
+class string{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The String");
+        String str=sc.nextLine();
+        int n=str.length();
+        String revers=new String("");
+        for (int i =str.length()-1 ; i>=0; i--){
+            char c=str.charAt(i);     //for single char store use charAt() method
+            revers=revers+c;
+        }
+        System.out.println(revers);
+             if (str.equals(revers)) {
+            System.out.println("Is Palindrome");
+        }
+             else {
+            System.out.println("Not Palindrome");
+        }
+
+    }
+}
