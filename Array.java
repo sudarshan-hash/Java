@@ -34,8 +34,32 @@ class array{
             j++;
         }
 
+    }
+}
 
 
+// --------------------------- Array Finding Second Largest Number  ---------------------------------
+
+class array{
+    public  static void main(String[] args){
+        int[] Array ={ 100,23,435,45,435};
+
+        int FirstLargest , SecondLargest , ThiredLargest;
+
+        FirstLargest=SecondLargest=Integer.MIN_VALUE; //Set some value to var
+
+        for(int i=0;i<Array.length;i++){
+            if (Array[i]>FirstLargest){
+                // ThiredLargest=SecondLargest;
+                SecondLargest=FirstLargest; // before updating FirstValue Stored it  into SecondValue
+                FirstLargest=Array[i];
+            } else if ( Array[i]>SecondLargest && Array[i]!=FirstLargest) {
+                SecondLargest=Array[i];
+            }
+        }
+        System.out.println("FirstValue: "+FirstLargest);
+        System.out.println("SecondValue: "+SecondLargest);
+        // System.out.println("ThiredValue: "+ThiredLargest);
 
     }
 }
