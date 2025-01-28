@@ -63,3 +63,52 @@ class array{
 
     }
 }
+
+//  ---------------------------  Reverse  of an Array -----------------------------------
+
+class array{
+    public static void main(String[] args){
+        int []Array={19,34,21,4345,12,2};
+        int []rev=new int[Array.length];
+        for (int i=Array.length-1,j=0 ; i>=0 ; i--){
+            rev[j]=Array[i];
+            System.out.println(rev[j]);
+            j++;
+        }
+    }
+}
+
+// --------------------- Increasing the size of an array in java ---------------------------
+
+
+/*
+  In java Once`s array is created it can`t be increased in size . We take a help of one another  reference of array
+        Steps
+      1) Create another new bigger size of array using diif variable name of old array.
+      2) Copying all Element into the new array.
+      3) Assign  that old array reference to the new array {oldArray=newArray} and new array to the null.
+      4) So that old Array element are in garbage collector
+  This is only one way to increasing the size of an array in java . The arrayList follows this method.
+ */
+
+class array {
+    public static void main(String[] args) {
+        int[] Array = {19, 34, 21, 4345, 12, 2};
+        int[] New = new int[2 * Array.length]; // New Array
+        // copying element
+        for (int i = 0; i < Array.length; i++) {
+            New[i] = Array[i];  // Copying element
+        }
+
+        // Step 3
+        Array=New;// old array reference to the new array
+        New=null;// array to the null
+
+        // Cheking an size of array
+
+        Array[6]=10;Array[7]=39;
+        System.out.println(Array[7]);
+        System.out.println(New);
+
+    }
+}
