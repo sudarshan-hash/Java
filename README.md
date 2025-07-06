@@ -9,3 +9,5 @@
   6) 2D Array  <a href="https://github.com/sudarshan-hash/Java/blob/main/Array2D.java"><b style="colour: blue">code<b></a> <br>
   7) Creating Jagged Array <a href="https://github.com/sudarshan-hash/Java/blob/main/Array2D.java"><b style="colour: blue">code<b></a>  <br>
   8) Matrix Multiplication <a href="https://github.com/sudarshan-hash/Java/blob/main/Array2D.java"><b style="colour: blue">code<b></a>  <br>
+  9) The Java Bank Account User Simple Project to implement and understad the OOP`s Concept <a href="https://github.com/sudarshan-hash/Java/tree/main/Java%20Project"><b style="colour: blue">code<b></a>  <br>
+  
